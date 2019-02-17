@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{post.title}}</title>
+	</head>
+	<body>
+		<a href="/" style="font-family: verdana;font-size:160%">Home</a>
+		<div class="alert alert-primary" role="alert">
+			<h1 style="text-align: center;font-size: 250%">{{post.title}}</h1>
+		</div>
+		<p style="font-family:courier;color: red;font-size: 100%">Posted {{post.time_stamp|timesince}} ago</p>
+		<p style="font-family: verdana;">{{post.body|linebreaksbr}}</p>
+	</body>
+</html>

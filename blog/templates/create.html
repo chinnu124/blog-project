@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+	<form action="/create/" method="post">
+		{% csrf_token %}
+	</div>
+		<label style="font-size:30px;"><b>Title</b></label><br>
+		<input type="text" name="title">
+		<br><br>
+		<label style="font-size:30px;"><b>Body</b></label><br>
+		<textarea name="body" rows="8" cols="80"></textarea><br>
+		<input type="submit" value="Create">
+	</form>
+</body>
+</html>
